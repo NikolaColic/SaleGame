@@ -1,0 +1,72 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="15.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{CC636682-0A90-4104-8644-E80FD099C66D}</ProjectGuid>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>IgricePS.Operacije</RootNamespace>
+    <AssemblyName>IgricePS.Operacije</AssemblyName>
+    <TargetFrameworkVersion>v4.7.2</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <Deterministic>true</Deterministic>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Net.Http" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Operacije\ObrisiStranicu.cs" />
+    <Compile Include="Operacije\PretraziOcene.cs" />
+    <Compile Include="Operacije\UcitajKompanije.cs" />
+    <Compile Include="Operacije\UcitajKorisnike.cs" />
+    <Compile Include="Operacije\UcitajOcene.cs" />
+    <Compile Include="Operacije\ZapamtiOcenu.cs" />
+    <Compile Include="Operacije\PretraziIgrice.cs" />
+    <Compile Include="Operacije\PretraziZanrove.cs" />
+    <Compile Include="Operacije\UcitajIgrice.cs" />
+    <Compile Include="Operacije\UcitajIgricu.cs" />
+    <Compile Include="Operacije\UcitajZanrove.cs" />
+    <Compile Include="Operacije\ZapamtiStranicuIgrice.cs" />
+    <Compile Include="Operacije\ZapamtiStranicuKompanije.cs" />
+    <Compile Include="Operacije\ZapamtiZanr.cs" />
+    <Compile Include="OpstaSistemskaOperacija.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\IgricePS.BazaPodataka\IgricePS.BazaPodataka.csproj">
+      <Project>{769731b8-7758-45ad-b844-a8b35046caa5}</Project>
+      <Name>IgricePS.BazaPodataka</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\IgricePS.Domen\IgricePS.Domen.csproj">
+      <Project>{dcff9d57-c833-4370-90ce-81d328e84650}</Project>
+      <Name>IgricePS.Domen</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+</Project>

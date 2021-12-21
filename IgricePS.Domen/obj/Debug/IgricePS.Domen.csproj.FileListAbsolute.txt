@@ -1,0 +1,6 @@
+C:\Users\PC\source\repos\IgricePS\IgricePS.Domen\obj\Debug\IgricePS.Domen.csprojAssemblyReference.cache
+C:\Users\PC\source\repos\IgricePS\IgricePS.Domen\obj\Debug\IgricePS.Domen.csproj.CoreCompileInputs.cache
+C:\Users\PC\source\repos\IgricePS\IgricePS.Domen\bin\Debug\IgricePS.Domen.dll
+C:\Users\PC\source\repos\IgricePS\IgricePS.Domen\bin\Debug\IgricePS.Domen.pdb
+C:\Users\PC\source\repos\IgricePS\IgricePS.Domen\obj\Debug\IgricePS.Domen.dll
+C:\Users\PC\source\repos\IgricePS\IgricePS.Domen\obj\Debug\IgricePS.Domen.pdb

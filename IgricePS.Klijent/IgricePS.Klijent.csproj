@@ -1,0 +1,160 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="15.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{62483DB2-2E5F-4DDA-8BC5-58FE3B6E4FB7}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <RootNamespace>IgricePS.Klijent</RootNamespace>
+    <AssemblyName>IgricePS.Klijent</AssemblyName>
+    <TargetFrameworkVersion>v4.7.2</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
+    <Deterministic>true</Deterministic>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Deployment" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Net.Http" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Program.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Transfer\Komunikacija.cs" />
+    <Compile Include="UIKontroleri\KreirajOcenaIgriceKontroler.cs" />
+    <Compile Include="UIKontroleri\KreirajStranicuIgricaKontroler.cs" />
+    <Compile Include="UIKontroleri\KreirajStranicuKontroler.cs" />
+    <Compile Include="UIKontroleri\KreirajZanrKontroler.cs" />
+    <Compile Include="UIKontroleri\PretragaIgricaKontroler.cs" />
+    <Compile Include="UIKontroleri\PretragaOcenaIgriceKontroler.cs" />
+    <Compile Include="UIKontroleri\PretragaZanraKontroler.cs" />
+    <Compile Include="UI\GlavniPanel.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="UI\GlavniPanel.Designer.cs">
+      <DependentUpon>GlavniPanel.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UI\KreirajStranicuIgricaUI.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="UI\KreirajStranicuIgricaUI.Designer.cs">
+      <DependentUpon>KreirajStranicuIgricaUI.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UI\KreirajStranicuUI.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="UI\KreirajStranicuUI.Designer.cs">
+      <DependentUpon>KreirajStranicuUI.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UI\KreirajZanrUI.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="UI\KreirajZanrUI.Designer.cs">
+      <DependentUpon>KreirajZanrUI.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UI\KreiranjeOcenaIgriceUI.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="UI\KreiranjeOcenaIgriceUI.Designer.cs">
+      <DependentUpon>KreiranjeOcenaIgriceUI.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UI\PretragaIgricaUI.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="UI\PretragaIgricaUI.Designer.cs">
+      <DependentUpon>PretragaIgricaUI.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UI\PretragaOcenaIgriceUI.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="UI\PretragaOcenaIgriceUI.Designer.cs">
+      <DependentUpon>PretragaOcenaIgriceUI.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UI\PretragaZanraUI.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="UI\PretragaZanraUI.Designer.cs">
+      <DependentUpon>PretragaZanraUI.cs</DependentUpon>
+    </Compile>
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Resources.resx</DependentUpon>
+    </Compile>
+    <EmbeddedResource Include="UI\GlavniPanel.resx">
+      <DependentUpon>GlavniPanel.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UI\KreirajStranicuIgricaUI.resx">
+      <DependentUpon>KreirajStranicuIgricaUI.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UI\KreirajStranicuUI.resx">
+      <DependentUpon>KreirajStranicuUI.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UI\KreirajZanrUI.resx">
+      <DependentUpon>KreirajZanrUI.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UI\KreiranjeOcenaIgriceUI.resx">
+      <DependentUpon>KreiranjeOcenaIgriceUI.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UI\PretragaIgricaUI.resx">
+      <DependentUpon>PretragaIgricaUI.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UI\PretragaOcenaIgriceUI.resx">
+      <DependentUpon>PretragaOcenaIgriceUI.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UI\PretragaZanraUI.resx">
+      <DependentUpon>PretragaZanraUI.cs</DependentUpon>
+    </EmbeddedResource>
+    <None Include="Properties\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+    </None>
+    <Compile Include="Properties\Settings.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="App.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\IgricePS.Domen\IgricePS.Domen.csproj">
+      <Project>{dcff9d57-c833-4370-90ce-81d328e84650}</Project>
+      <Name>IgricePS.Domen</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+</Project>
