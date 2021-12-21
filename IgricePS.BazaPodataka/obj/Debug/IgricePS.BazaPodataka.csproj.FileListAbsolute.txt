@@ -1,9 +1,0 @@
-C:\Users\PC\source\repos\IgricePS\IgricePS.BazaPodataka\bin\Debug\IgricePS.BazaPodataka.dll
-C:\Users\PC\source\repos\IgricePS\IgricePS.BazaPodataka\bin\Debug\IgricePS.BazaPodataka.pdb
-C:\Users\PC\source\repos\IgricePS\IgricePS.BazaPodataka\bin\Debug\IgricePS.Domen.dll
-C:\Users\PC\source\repos\IgricePS\IgricePS.BazaPodataka\bin\Debug\IgricePS.Domen.pdb
-C:\Users\PC\source\repos\IgricePS\IgricePS.BazaPodataka\obj\Debug\IgricePS.BazaPodataka.csprojAssemblyReference.cache
-C:\Users\PC\source\repos\IgricePS\IgricePS.BazaPodataka\obj\Debug\IgricePS.BazaPodataka.csproj.CoreCompileInputs.cache
-C:\Users\PC\source\repos\IgricePS\IgricePS.BazaPodataka\obj\Debug\IgricePS.BazaPodataka.csproj.CopyComplete
-C:\Users\PC\source\repos\IgricePS\IgricePS.BazaPodataka\obj\Debug\IgricePS.BazaPodataka.dll
-C:\Users\PC\source\repos\IgricePS\IgricePS.BazaPodataka\obj\Debug\IgricePS.BazaPodataka.pdb
